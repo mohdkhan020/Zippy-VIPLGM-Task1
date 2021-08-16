@@ -1,2 +1,2 @@
 # Zippy-VIPLGM-Task1
--[Solution]()
+- [Solution](https://mohdkhan020.github.io/Zippy-VIPLGM-Task1/zippy1.html)
