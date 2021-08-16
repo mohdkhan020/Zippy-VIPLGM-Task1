@@ -1,0 +1,271 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/06/Images-Wallpaper-HD-Background.png);
+    background-size: 195rem 95rem;
+    background-repeat: no-repeat;
+    /* padding-right: 50rem; */
+    /* background-size: ; */
+    animation: slider 25s infinite linear;
+}
+
+@keyframes slider {
+    0%{
+        background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/06/Images-Wallpaper-HD-Background.png");
+    }
+    25%{
+        background-image: url('https://www.desktopbackground.org/p/2014/09/23/829226_abstract-sharp-rocks-hd-wallpapers-digital-graphics-abstract_1366x768_h.jpg');
+    }
+    50%{
+        background-image: url('https://thumbs.dreamstime.com/z/voice-assistant-concept-vector-sound-wave-recognition-equalizer-flow-background-personal-gradient-illustration-193848415.jpg');
+    }
+    75%{
+        background-image: url('https://i.pinimg.com/originals/3d/82/d9/3d82d9bd1c5dd9789a92cf7c5421a63d.jpg');
+    }
+}
+html {
+    font-size: 62.5%;
+}
+
+
+
+nav{
+    height: 15rem;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: #009432; */
+    
+}
+.span1{
+   
+font-family: 'WindSong', cursive;
+    padding-left: 11rem;
+    font-size: 10rem;
+    color: #3498db;
+}
+.logo{
+    
+    color: #fff;
+    font-size: 3rem;
+    text-shadow: .1rem .2rem .2rem red;
+}
+
+.menu{
+    display: inline-block;
+    width: 60vw;
+    /* display: flex; */
+    justify-content: space-around;
+    align-items: center;
+}
+a:hover{
+
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+}
+.menu a.active{
+    background-color: red;
+font-size: 4rem;
+color: white;
+}
+.main_heading h1{
+    color: white;
+    font-size: 5rem;
+    /* background-color: red; */
+    position: absolute;
+    top: 40rem;
+    left: 24rem;
+font-family: Arial, Helvetica, sans-serif;
+text-transform: capitalize;
+
+}
+
+
+.heading_paragraph h4{
+    position: absolute;
+    color: white;
+    font-size: 2.8rem;
+    top:55rem;
+    left: 24rem;
+font-family: Arial, Helvetica, sans-serif;
+
+
+}
+.button{
+position: absolute;
+top: 68rem;
+    left: 24rem;
+
+}
+.button1{
+    font-size: 2.3rem;
+    height:6rem;
+    width: 16rem;
+    cursor: pointer;
+    background-color: #dddd00;
+    border-radius: 1.5rem;
+    z-index: -1;
+    transition: all 0.3s;
+
+}
+.button1:hover::before{
+    transform:scaleX(1.2) scaleY(1.6);
+    opacity: 0;
+}
+.button1:hover{
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+    transform: translateY(-5px);
+}
+.button1:active{
+    transform: translateY(-2px);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.7);
+}
+.button2{
+    color: white;
+    font-size: 2.3rem;
+    margin-left: 1rem;
+    height:6rem;
+    width: 16rem;
+    cursor: pointer;
+    background-color: #8e44ad;
+    border-radius: 1.5rem;    
+    z-index: -1;
+    transition: all 0.3s;
+
+}
+
+.button2:hover::before{
+    transform:scale(1.2) scaleY(1.6);
+    opacity: 0;
+}
+.button2:hover{
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+    transform: translateY(-5px);
+}
+.button2:active{
+    transform: translateY(-2px);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.7);
+}
+
+.Welcomehead{
+    margin: 0;
+    padding: 0;
+position: relative;
+top: 90rem;
+font-size: 3rem;
+left: 34%;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.Welcomeparagraph{
+    position: absolute;
+    /* position: relative;~ */
+    top: 118rem;
+    font-size: 2.5rem;
+    left: 25%;
+    right: 48%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+.umblogo{
+    position: absolute;
+    top: 118rem;
+    left: 65%;
+}
+.threeheading{
+    padding-left: 14rem;
+    padding-right: 10rem;
+    display: flex;
+    position: absolute;
+    top: 150rem;
+    font-size: 2.5rem;
+    left: 19rem;
+    right: 19rem;
+    color: gray;
+}
+.threeheading h2{
+   
+    margin-left: 9rem;
+    color: black;
+    top: 2rem;
+}
+
+.threeheading img{
+    margin-bottom: 3rem;
+    margin-left: 12rem;
+    display: block;
+
+}
+.threeheading p{
+   padding-left: 8rem;
+    margin-top: 3rem;
+}
+
+.threeheading .button1{
+    
+    top: 2rem;
+    margin-left: 9rem;
+    margin-top: 2rem;
+}
+.threeheading .button1:hover{
+    background-color: #8e44ad;
+color: white;
+}
+
+.Projects{
+    border-top: .2rem gray;
+    position: absolute;
+    /* margin-top: 14rem; */
+    top: 210rem;
+    font-size: 5.5rem;
+    left: 43%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Projectimage{
+    display: flex;
+    font-size: 2.5rem;
+justify-content: space-between;
+align-items: center;
+margin-left: 8rem;
+margin-right: 50rem;
+  
+    position: absolute;
+   margin-top: 220rem ;
+}
+
+.Projectimage h1{
+    font-size: 4rem;
+}
+
+
+
+
+
+
+
+@media (max-width:998px) {
+    html{
+        font-size: 45%;
+    }
+}
+
+@media (max-width:768px) {
+    html{
+        font-size: 35%;
+    }
+}
+
+@media  (max-width:768px) {
+    .threeheading{
+        
+    }
+    
+}

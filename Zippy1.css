@@ -1,0 +1,768 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-image: url(/image/b.jpg);
+    background-repeat: no-repeat;
+    background-size: 195rem 95rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    animation: slider 25s infinite linear;
+
+}
+
+@keyframes slider {
+    0%{
+        background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/06/Images-Wallpaper-HD-Background.png");
+    }
+    25%{
+        background-image: url('/image/birds_4x.webp');
+    }
+    50%{
+        background-image: url('/image/b.jpg');
+    }
+    75%{
+        background-image: url('https://i.pinimg.com/originals/3d/82/d9/3d82d9bd1c5dd9789a92cf7c5421a63d.jpg');
+    }
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+nav{
+    margin-top: 8rem;
+    /* background-color: #ffbb00; */
+    height: 8rem; /*nav bar height*/
+    width: 100%;
+}
+label.logo{
+    margin-left: 15rem;
+    font-size: 11rem;
+    text-shadow: .1rem .2rem .2rem red;
+    color: #3498db;
+    line-height: 8rem;
+    padding: 0 8rem;
+    font-weight: bold;
+    font-family: 'WindSong', cursive;
+
+}
+.halflogo{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    color:white;
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 8rem; /*for center*/
+}
+
+nav ul{
+   padding-right: 30rem;
+    float: right;
+    margin-right: 2rem;
+
+}
+nav ul li{
+    display: inline-block;
+    line-height: 8rem; 
+    /* background-color: black; */
+    margin: 0rem 2rem;
+
+}
+nav ul li a{
+    color: white;
+    font-size:2rem;
+    text-transform: uppercase ;
+    padding: .7rem 1.3rem;
+    border-radius: .3rem;
+}
+a.active,a:hover{
+    background-color: red;
+    transition: s;
+}
+.checkbtn{
+    font-size: 3rem;
+    color: white;
+    float: right;
+    line-height: 8rem;
+    margin-right: 4rem;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+.button{
+    margin-top: 5rem;
+    margin-left: 30rem;
+    }
+    .button1{
+        font-size: 2.3rem;
+        height:6rem;
+        width: 16rem;
+        cursor: pointer;
+        background-color: #dddd00;
+        border-radius: 1.5rem;
+        z-index: -1;
+        transition: all 0.3s;
+    
+    }
+    .button1:hover::before{
+        transform:scaleX(1.2) scaleY(1.6);
+        opacity: 0;
+    }
+    .button1:hover{
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+        transform: translateY(-5px);
+    }
+    .button1:active{
+        transform: translateY(-2px);
+        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.7);
+    }
+    .button2{
+        color: white;
+        font-size: 2.3rem;
+        margin-left: 1rem;
+        height:6rem;
+        width: 16rem;
+        cursor: pointer;
+        background-color: #8e44ad;
+        border-radius: 1.5rem;    
+        z-index: -1;
+        transition: all 0.3s;
+    
+    }
+    
+    .button2:hover::before{
+        transform:scale(1.2) scaleY(1.6);
+        opacity: 0;
+    }
+    .button2:hover{
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+        transform: translateY(-5px);
+    }
+    .button2:active{
+        transform: translateY(-2px);
+        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.7);
+    }
+    
+
+    section{
+        background-size: cover;
+        height:calc(100vh - 80px);
+    }
+    .main_heading,h1{
+        margin-top: 30rem;
+        margin-left: 15rem;
+        font-size: 4rem;
+        color: white;
+    }
+    .main_heading,p{
+        margin-right: 20%;
+        margin-left: 15rem;
+        margin-top: 3rem;
+        font-size: 3rem;
+        color: white;
+    }
+
+    .Welcomeheading h1{
+        color: black;
+        font-size: 6rem;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 25rem;
+        margin-left: 34%;
+        
+    }
+
+
+    .Welcomeheading p{
+        color: gray;
+        font-size: 3rem;
+
+        /* background-color: greenyellow; */
+        margin-top: 7rem;
+        margin-left: 25%;
+        margin-right: 50%;
+    }
+
+    .Welcomeheading img{
+        margin-top: -20rem;
+        margin-left: 65%;
+        /* margin-right: 50%; */
+    }
+
+
+
+
+
+
+
+
+
+    .threeheading{
+        margin-right: 15%;
+        margin-top: 7rem;
+        margin-left: 20%;
+        display: flex;
+        font-size: 2rem;
+        color: gray;
+    }
+    .threeheading h2{
+        color: black;
+        margin-left: 19%;
+       
+    }
+    
+    .threeheading img{
+        margin-bottom: 3rem;
+        /* margin-left: 12rem; */
+        margin-left: 24%;
+
+        display: block;
+    
+    }
+    .threeheading p{
+        color: gray;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-right: 25%;
+        margin-left: 19%;
+
+        font-size: 2.3rem;
+
+    }
+    
+    .threeheading .button1{
+        
+        margin-left: 8rem;
+        margin-top: 2rem;
+    }
+    .threeheading .button1:hover{
+        background-color: #8e44ad;
+    color: white;
+    }
+
+
+
+
+
+
+    .Projects{
+        margin-top: -25rem;
+        color: black;
+        /* border-top: .2rem gray; */
+        font-size: 5.5rem;
+        margin-left: 45%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .Projectimage{
+        background-color: #ddd;
+        margin-top: 4rem;
+        display: flex;
+        align-items: center;
+      
+    }
+    
+    .Projectimage h1{
+        color: black;
+        margin-right: 20%;
+        font-size: 3rem;
+        margin-top: 2.5rem;
+    }
+    
+    .Projectimage p{
+color: gray;
+margin-top: 1rem;
+font-size: 2.2rem;
+    }
+
+    .Projectimage .button1{
+        border-radius: 6px;
+        margin-left: 30%;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    .card1:hover,.card2:hover, .card3:hover, .card4:hover{
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+        transform: translateY(-5px);
+        background-color: yellow;
+          
+    }
+    .Projectimage .button1:hover{
+        background-color: #8e44ad;
+
+    }
+
+
+    .Pricinghead{
+        margin: 0;
+        font-size: 6rem;
+        margin-top: 14rem;
+        margin-left: 40%;
+      
+        color: black;
+    }
+
+    .PriceTable{
+        margin: 0;
+        margin-top: -19rem;
+        /* color: black; */
+        display: flex;
+    }
+    .PriceTable h1{
+        color: black;
+        font-size: 4rem;
+
+    }
+    .PriceTable h2{
+margin-top: 4rem;
+        margin-left: 37%;
+        color: gray;
+        font-size: 2rem;
+    }
+
+
+    .PriceTable P{
+        color: BLACK;
+    }
+    
+    .PriceTable .button1{
+        margin-top: 3rem;
+        margin-left: 25%;
+        border-radius: 8px;
+    }
+    .PriceTable .button1:hover{
+        background-color: red;
+    }
+
+.hr{
+    margin-top: 30rem;
+}
+
+
+.VideoProjects{
+   
+    background-color: #8e44ad;
+    padding-bottom: 10rem;
+    padding-left: -20rem;
+}
+
+.Videohead {
+    justify-content: space-between;
+    text-align: center;
+    display: flex;
+}
+
+.VideoProjects h1{
+    margin-left: 42%;
+    padding-top: 10rem;
+}
+  
+.Zippyteamhead h1{
+
+    margin: 0;
+    margin-top: 8rem;
+    margin-left: 45%;
+    margin-bottom: 5rem;
+    color: black;
+    
+}
+
+.Zippyteam h1{
+    font-size: 2rem;
+    color: black;
+    margin: 2rem;
+    margin-top: 3rem;
+}
+
+.Zippyteam h2{
+    color: gray;
+    margin: 1rem;
+    margin-bottom: 8rem;
+}
+
+.Zippyteam{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    /* border:2px solid black; */
+}
+
+.Zippyteam img{
+    border-radius: 50%;
+}
+
+.Zippylife{
+    margin-top: -19rem;
+   padding-left: 38%;
+    background-color: #eee;
+}
+
+.Zippylife h1{
+    font-size: 3.5rem;
+    color: black;
+    padding: 3rem;
+    
+}
+.carousel {
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.carousel button{
+  
+   margin-bottom: 2rem;
+    cursor: pointer;
+    margin: 0rem;
+    background-color: #8e44ad;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+
+
+
+
+
+
+
+
+
+.Signup{
+   margin-top: -15rem;
+    background-image: url(https://images.unsplash.com/photo-1429041966141-44d228a42775?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YnJpZGdlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80);
+background-size: cover;
+background-repeat: no-repeat;
+padding-bottom: 35rem;
+}
+
+
+
+.Signup h1{
+    padding-top: 12rem;
+color: #fff; 
+   font-size: 6rem;
+    margin-left: 34%;
+}
+
+.Signup input{
+    margin-left: 30%;
+    tab-size: 20px;
+    margin-top: 8rem;
+    font-size: 4rem;
+    padding: 2rem;
+}
+
+.Signup button{
+
+    cursor: pointer;
+    font-size: 4rem;
+    padding: 2rem;
+    color: black;
+    background-color: yellow;
+
+}
+
+.Signup .btnsgnup{
+    padding-top: 4rem;
+    margin-left: 59.2%;
+}
+
+.btnsgnup button{
+    background-color: #8e44ad;
+
+}
+
+.Blog h1{
+    margin: 6rem;
+   color: black;
+   margin-left: 49%;
+}
+
+.Blogimg{
+
+    display: flex;
+    margin-left: 18%;
+}
+.Blogimg h2{
+    margin-top: 2.5rem;
+    margin-left: 4%;
+    text-align: center;
+    margin-right: 64%;
+    font-size: 1.9rem;
+}
+.Blogimg h3{
+    color: gray;
+    margin-top: 2rem;
+    margin-left: 4%;
+    text-align: center;
+    margin-right: 64%;
+    font-size: 1.5rem;
+}
+
+.Blogimg p{
+    color: black;
+    margin-top: 2rem;
+    margin-left: 4%;
+    text-align: center;
+    margin-right: 64%;
+    font-size: 1.8rem;
+}
+
+.Blogbutton{
+    margin-left: 2.5rem;
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    height:5rem;
+    width: 14rem;
+    cursor: pointer;
+    background-color: #ddd;
+    border-radius: .3rem;
+    z-index: -1;
+    transition: all 0.3s;
+}
+.Blogbutton:hover{
+    background-color: yellow;
+}
+.Blogbutton:hover::before{
+    transform:scaleX(1.2) scaleY(1.6);
+    opacity: 0;
+}
+.Blogbutton:hover{
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+    transform: translateY(-5px);
+}
+.Blogbutton:active{
+    transform: translateY(-2px);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.7);
+}
+
+.Form{
+    margin-top: 10rem;
+    display: flex;
+    background-color: yellow;
+
+    font-size: 1.5rem;
+font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+.Form h1{
+    padding-bottom: 4rem;
+    padding-top: 5rem;
+margin-top: 0;
+    color: black;
+}
+
+.formdetail h2{
+    padding-top: 1rem;
+    padding-left: 8rem;
+    padding-bottom: 1rem;
+}
+
+.formdetail input{
+    padding-top: 1.5rem;
+   margin-left: 8rem;
+    font-size: 1.5rem;
+    width: 30vh;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.Form .linput{
+    padding-top: .5rem;
+    padding-bottom: 12rem;
+    font-size: 1.8rem;
+
+}
+
+.formbutton{
+   margin-left: 8rem;
+    cursor: pointer;
+    color: white;
+    background-color: #8e44ad;
+    font-size: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
+}
+
+footer{
+    
+    color: black;
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+}
+footer h1{
+    color: black;
+    margin-right: 40%;
+}
+footer p{
+    color: black;
+}
+footer img{
+    margin-top: 6rem;
+    margin-left: 4rem;
+}
+
+.contactimg img{
+    padding-left: 3rem;
+}
+
+@media(max-width: 952px){
+
+    .Welcomeheading h1{
+        color: pink;
+
+        margin-top: 15rem;
+        margin-left: 25%;
+        
+    }
+
+    label.logo{
+        font-size: 7rem;
+        padding-left: 5rem;
+    }
+    .halflogo{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+        color:white;
+        font-weight: bold;
+        font-size: 2.5rem;
+        line-height: 8rem; /*for center*/
+    }
+    nav ul li a{
+        font-size: 1.6rem;
+
+    }
+    body{
+        background-image: url(/image/b.jpg);
+        background-repeat: no-repeat;
+        background-size: 90rem 90rem;        
+    }
+   
+}
+
+@media(max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    
+    .Welcomeheading h1{
+        color: green;
+        font-size: 3rem;
+        margin-top: 20rem;
+        margin-left: 25%;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        /* background: #2c3e50; */
+        top: 21rem;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 12rem 0rem;
+        line-height: 1rem;
+    
+    }
+    nav ul li a{
+        font-size: 2rem;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+    .main_heading,h1{
+        margin-top: 15rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        font-size: 4rem;
+        color: white;
+    }
+    .main_heading,p{
+        margin-left: 10rem;
+        margin-top: 3rem;
+        margin-right: 10rem;
+
+        font-size: 2.5rem;
+        color: white;
+    }
+    .button{
+        margin-top: 5rem;
+        margin-left: 20rem;
+        }
+
+    }
+
+@media(max-width: 768px){
+    
+    
+
+       .Welcomeheading h1{
+        color: red;
+        margin-right: ;
+        margin-top: 30rem;
+        margin-left: 25%;
+        
+    }
+
+    .main_heading,h1{
+        margin-top: 15rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        font-size: 3rem;
+        color: white;
+    }
+    .main_heading,p{
+        margin-left: 10rem;
+        margin-top: 3rem;
+        margin-right: 10rem;
+
+        font-size: 1.5rem;
+        color: white;
+    }
+    .button{
+        margin-top: 3rem;
+        margin-left: 17rem;
+        }
+        .button1{
+            font-size: 1.3rem;
+            height:4rem;
+            width: 10rem;
+        }
+        .button2{
+            font-size: 1.3rem;
+            margin-left: auto;
+            height:4rem;
+            width: 10rem;
+        }
+        body{
+            background-image: url(/image/b.jpg);
+            background-repeat: no-repeat;
+            background-size: 80rem 90rem;        
+        }
+        .button{
+            margin-top: 5rem;
+            margin-left: 20rem;
+            }
+}
+
+
