@@ -156,7 +156,7 @@ a.active,a:hover{
         height:calc(100vh - 80px);
     }
     .main_heading,h1{
-        margin-top: 30rem;
+        margin-top: 37rem;
         margin-left: 15rem;
         font-size: 4rem;
         color: white;
@@ -219,7 +219,6 @@ a.active,a:hover{
     
     .threeheading img{
         margin-bottom: 3rem;
-        /* margin-left: 12rem; */
         margin-left: 24%;
 
         display: block;
@@ -246,23 +245,26 @@ a.active,a:hover{
     }
 
 
-
-
-
-
     .Projects{
-        margin-top: -25rem;
+        margin-top: -20rem;
         color: black;
-        /* border-top: .2rem gray; */
+        border-top: .2rem gray;
         font-size: 5.5rem;
         margin-left: 45%;
         font-family: Arial, Helvetica, sans-serif;
     }
+ 
+
     .Projectimage{
-        background-color: #ddd;
+        margin: 0;
+        display: flex;
+        /* flex-wrap: wrap; */
+         background-color: #ddd; 
         margin-top: 4rem;
         display: flex;
-        align-items: center;
+        /* margin-right: ; */
+       
+        align-items: center; 
       
     }
     
@@ -312,8 +314,11 @@ font-size: 2.2rem;
         margin-top: -19rem;
         /* color: black; */
         display: flex;
+        /* flex-wrap: wrap; */
     }
     .PriceTable h1{
+        
+
         color: black;
         font-size: 4rem;
 
@@ -352,12 +357,15 @@ margin-top: 4rem;
 }
 
 .Videohead {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
-    display: flex;
+   
 }
 
 .VideoProjects h1{
+    
     margin-left: 42%;
     padding-top: 10rem;
 }
@@ -387,8 +395,11 @@ margin-top: 4rem;
 
 .Zippyteam{
     display: flex;
+    flex-wrap: wrap;
+
     justify-content: space-around;
     text-align: center;
+    flex-wrap: wrap;
     margin-left: 20%;
     margin-right: 20%;
     /* border:2px solid black; */
@@ -396,36 +407,104 @@ margin-top: 4rem;
 
 .Zippyteam img{
     border-radius: 50%;
+    display: flex;
 }
 
-.Zippylife{
-    margin-top: -19rem;
-   padding-left: 38%;
-    background-color: #eee;
+
+
+
+
+.life-section {
+    background-color: rgb(230, 227, 227);
+    padding-top: .1vh;
+    padding-bottom: 10vh;
 }
 
-.Zippylife h1{
-    font-size: 3.5rem;
-    color: black;
-    padding: 3rem;
-    
+#life h1 {
+    padding-bottom: 30px;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
 }
-.carousel {
-    margin-right: 2rem;
+
+.resp-life {
+    max-width: 720px;
+    display: block;
+    margin: auto;
+}
+
+.show-top {
     cursor: pointer;
+    width: 100%;
+    height: 30rem !important;
+    padding: 20px 10px;
 }
 
-.carousel button{
-  
-   margin-bottom: 2rem;
-    cursor: pointer;
-    margin: 0rem;
-    background-color: #8e44ad;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    padding-left: .5rem;
-    padding-right: .5rem;
+.img-slides {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }
+
+#move {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+#move::-webkit-scrollbar {
+    display: none;
+}
+
+.pictures {
+    cursor: pointer;
+    width: 120px;
+    height: 100px;
+    opacity: 0.8;
+    margin: 5px;
+}
+
+.pictures:hover {
+    opacity: 1;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 00%;
+    height: 100px;
+    padding: 0 10px;
+    font-size: 26px;
+    background-color: #dd0000;
+    color: white;
+}
+
+.arrow:hover {
+    background-color: #65317D;
+}
+
+@media (max-width: 715px) {
+    /* TEAM  */
+    .resp-life{
+        max-width: 650px !important;
+    }
+}
+
+@media (max-width: 576px){
+    #life .show-top{
+        height: 20rem !important;
+    }
+}
+
+
+
+
 
 
 
@@ -482,6 +561,7 @@ color: #fff;
 }
 
 .Blog h1{
+
     margin: 6rem;
    color: black;
    margin-left: 49%;
@@ -546,8 +626,10 @@ color: #fff;
 }
 
 .Form{
+    margin-bottom: 20rem;
     margin-top: 10rem;
     display: flex;
+    flex-wrap: wrap;
     background-color: yellow;
 
     font-size: 1.5rem;
@@ -596,38 +678,87 @@ margin-top: 0;
     padding-right: 12rem;
 }
 
-footer{
-    
-    color: black;
+#footer-section
+{
+    padding-right: 2rem;
     display: flex;
-    justify-content:space-around;
+    margin: 0 15% 6vh 15%;
+    border:2px solid black;
+    justify-content: space-around;
+}
+.f-sections
+{
+padding-right: 14rem;
+    width: 33%;
     text-align: center;
+    
 }
-footer h1{
+.f-sections h5
+{
+    padding-left: 8rem;
     color: black;
-    margin-right: 40%;
+    font-size:20px;
+    font-weight: 600;
+    margin-bottom: 2vh;
 }
-footer p{
+
+
+.f-sections h4
+{
     color: black;
-}
-footer img{
-    margin-top: 6rem;
-    margin-left: 4rem;
-}
-
-.contactimg img{
-    padding-left: 3rem;
+    font-size:20px;
+    font-weight: 600;
+    margin-bottom: 2vh;
 }
 
-@media(max-width: 952px){
+.f-sections p
+{
+    color: #777;
+}
 
-    .Welcomeheading h1{
-        color: pink;
-
-        margin-top: 15rem;
-        margin-left: 25%;
-        
+span .social {
+    color: blue;
+    font-size: 25px;
+    padding: 6px 8px;
+}
+span .social:hover
+{
+    color:darkblue;
+}
+@media screen and (max-width:890px) {
+    #footer-section
+    {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
     }
+    .f-sections
+    {
+        padding: 15px 5px;
+        width: 60%;
+    }
+}
+
+.claim
+{
+    margin-top: -20rem;
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: -80rem;
+}
+.claim:hover
+{
+    background-color: black;
+    color: #fff;
+}
+.claim:hover .MAK
+{
+    color:cyan;
+}
+
+/* @media(max-width: 952px){
+
 
     label.logo{
         font-size: 7rem;
@@ -640,7 +771,7 @@ footer img{
         font-weight: bold;
         font-size: 2.5rem;
         line-height: 8rem; /*for center*/
-    }
+    /* }
     nav ul li a{
         font-size: 1.6rem;
 
@@ -653,16 +784,219 @@ footer img{
    
 }
 
-@media(max-width: 858px){
+    .main_heading,h1{
+        margin-top: 30rem;
+        margin-left: 18%;
+        font-size: 3.5rem;
+        color: white;
+    }
+    .main_heading,p{
+        margin-right: 20%;
+        margin-left: 20%;
+        margin-top: 4rem;
+        font-size: 2.3rem;
+        color: white;
+    }
+
+    .button{
+        margin-top: 2.1rem;
+        margin-left: 32%;
+        }
+        .button1{
+            width: 13rem;
+            height: 4.3rem;
+            font-size: 1.6rem;
+        }
+        .button2{
+            width: 13rem;
+            height: 4.3rem;
+            font-size: 2rem;
+        }
+
+    .Welcomeheading h1{
+        color: pink;
+
+        margin-top: 16rem;
+        margin-left: 31%;
+        font-size: 4rem;
+        
+    } */ */
+
+/* 
+    .Welcomeheading p{
+
+        margin-top: 5rem;
+        margin-left: 22%;
+        font-size: 2rem;
+        
+    }
+    .threeheading{
+        margin-right: 20%;
+        margin-top: 11rem;
+        margin-left: 19%;
+        font-size: 1.6rem;
+    }
+    .threeheading h2{
+        margin-left: 19%;
+       
+    }
+    
+    .threeheading img{
+        margin-bottom: 3rem;
+        margin-left: 24%;    
+    }
+    .threeheading p{
+       
+        margin-right: 25%;
+        margin-left: 19%;
+
+        font-size: 2rem;
+
+    }
+    
+    .threeheading .button1{
+        
+        margin-left: 3rem;
+        margin-top: 2.2rem;
+        width: 11rem;
+        height: 3.7rem;
+        font-size: 1.5rem;
+    }
+    
+
+
+
+    .Projects{
+        margin-top: 9rem;
+        font-size: 5rem;
+        margin-left: 42%;
+       
+    }
+    .Projectimage{
+        margin-top: 4.8rem;
+        width: 1200px;
+        height: auto;
+        display: flex;
+        display: wrap;   
+
+    }
+    
+    .Projectimage h1{
+        color: black;
+        margin-right: 20%;
+        font-size: 3rem;
+        margin-top: 2.5rem;
+    }
+    
+    .Projectimage p{
+color: gray;
+margin-top: 1rem;
+font-size: 2.2rem;
+    }
+
+    .Projectimage .button1{
+        border-radius: 6px;
+        margin-left: 30%;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    .card1:hover,.card2:hover, .card3:hover, .card4:hover{
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+        transform: translateY(-5px);
+        background-color: yellow;
+          
+    }
+    .Projectimage .button1:hover{
+        background-color: #8e44ad;
+
+    }
+
+
+    .Pricinghead{
+        margin: 0;
+        font-size: 6rem;
+        margin-top: 14rem;
+        margin-left: 40%;
+      
+        color: black;
+    }
+
+    .PriceTable{
+        margin: 0;
+        margin-top: -19rem;
+        /* color: black; */
+        /* display: flex;
+    }
+    .PriceTable h1{
+        color: black;
+        font-size: 4rem;
+
+    }
+    .PriceTable h2{
+margin-top: 4rem;
+        margin-left: 37%;
+        color: gray;
+        font-size: 2rem;
+    }
+
+
+    .PriceTable P{
+        color: BLACK;
+    }
+    
+    .PriceTable .button1{
+        margin-top: 3rem;
+        margin-left: 25%;
+        border-radius: 8px;
+    }
+    .PriceTable .button1:hover{
+        background-color: red;
+    } */
+ */
+
+  
+
+  @media(max-width: 858px){
     .checkbtn{
         display: block;
+    
+
+    .main_heading,h1{
+        margin-top: 30rem;
+        margin-left: 15rem;
+        font-size: 3rem;
+        color: white;
+    }
+    .main_heading,p{
+        margin-right: 20%;
+        margin-left: 15rem;
+        margin-top: 3rem;
+        font-size: 2rem;
+        color: white;
     }
     
     .Welcomeheading h1{
         color: green;
-        font-size: 3rem;
-        margin-top: 20rem;
+        font-size: 4rem;
+        margin-top: 28rem;
+        margin-left: 27%;
+    }
+    .Welcomeheading p{
+        color: gray;
+        font-size: 1.9rem;
+
+        /* background-color: greenyellow; */
+        margin-top: 7rem;
         margin-left: 25%;
+        margin-right: 50%;
+    }
+
+    .Welcomeheading img{
+        margin-top: -34rem;
+        margin-left: 61%;
+        width: 180px;
+        height: 180px;
     }
     ul{
         position: fixed;
@@ -710,25 +1044,28 @@ footer img{
         margin-left: 20rem;
         }
 
-    }
+        .Blogimg{
+            
+             margin-left: 1%;
+         }
+
+        }
 
 @media(max-width: 768px){
-    
-    
-
+  
        .Welcomeheading h1{
         color: red;
-        margin-right: ;
+        /* margin-right: 0rem; */
         margin-top: 30rem;
         margin-left: 25%;
-        
+        font-size: 4rem;
     }
 
     .main_heading,h1{
-        margin-top: 15rem;
+        margin-top: 24rem;
         margin-left: 10rem;
         margin-right: 10rem;
-        font-size: 3rem;
+        font-size: 2.5rem;
         color: white;
     }
     .main_heading,p{
@@ -755,6 +1092,7 @@ footer img{
             width: 10rem;
         }
         body{
+
             background-image: url(/image/b.jpg);
             background-repeat: no-repeat;
             background-size: 80rem 90rem;        
@@ -763,6 +1101,45 @@ footer img{
             margin-top: 5rem;
             margin-left: 20rem;
             }
+
+            .Welcomeheading p{
+                color: gray;
+                font-size: 1.5rem;
+        
+                /* background-color: greenyellow; */
+                margin-top: 7rem;
+                margin-left: 25%;
+                margin-right: 50%;
+            }
+        
+            .Welcomeheading img{
+                margin-top: -20rem;
+                margin-left: 61%;
+            }
+
+
+            .threeheading{
+                margin-top: 7rem;
+                margin-bottom: 100%;
+                margin-left: 20%;
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 2rem;
+                color: gray;
+            }
+
+            .Blogimg{
+               flex-wrap: wrap;
+                display: flex;
+                /* margin: 2rem; */
+                margin-left: 34%;
+            }
+            .Blogbutton{
+              
+               margin: 3rem;
+            }
+
+
 }
 
 
